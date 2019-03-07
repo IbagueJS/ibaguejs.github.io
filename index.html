@@ -6,97 +6,134 @@
     <title>IbagueJS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      .is-js, 
+      .has-background-js{
+        background: #ffe400 !important;
+        border-color: #ffe400 !important;
+      }
+      .has-background-js-primary{
+        background: #375a7f !important;
+        border-color: #375a7f !important;
+      }
+      .has-padding{
+        padding-left: 5%;
+        padding-right: 7%;
+      }
+    </style>
   </head>
   <body>
-    <!-- Header --!>
-    <section class="hero is-info is-large">
+    <!-- Header -->
+    <section class="hero is-js is-large">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">
+          <h1 class="title has-text-dark">
             [LOGO HERE]
           </h1>
-          <h2 class="subtitle">
+          <h2 class="subtitle has-text-dark">
             Comunidad JavaScript de Ibague
           </h2>
         </div>
       </div>
     </section>
-    <!-- Event list --!>
-    <section class="section has-text-centered">
-      <div class="container">
-        <h1 class="title">
-          Proximos Eventos
-        </h1>
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content has-text-centered">
-                <h3>
-                  No hay proximos eventos programados 💔
-                </h3>
-              </div>
-            </div>
-          </article>
-        </div>
-        <span class="tag is-primary">
-          Quieres proponer/exponer una charla? Abre un issue en nuestro
-          repositorio de <a
-          href="https://github.com/IbagueJS/charlas">Github</a> con tu
-          propuesta.
-        </span>
-        <br/>
-        <br/>
-        <h1 class="title">
-          Eventos Pasados
-        </h1>
-        <div class="box">
-          <article class="media">
-            <div class="media-content">
-              <div class="content has-text-centered">
-                <h2>Titulo Evento</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                </p>
-              </div>
-              <nav class="level is-mobile">
-                <div class="level-left">
-                  <div class="tags">
-                    <span class="tag is-success">
-                      Asistentes: ##
-                    </span>
-                    <span class="tag is-info">
-                      Lugar: ##
-                    </span>
-                    <span class="tag is-info">
-                      Fecha/Hora: ##
-                    </span>
+    <!-- Event list -->
+    <div id="events">
+      <section class="section has-text-centered">
+        <div class="container">
+          <h1 class="title">
+            Proximos Eventos
+          </h1>
+          <div v-for="event in events" v-if="event.status === 'past'" class="box">
+            <a v-bind:href="event.link" target="new">
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <h2>{{event.name}}</h2>
+                    <div class="has-text-light has-padding"  v-html="event.description"></div>
                   </div>
+                  <nav class="level is-mobile">
+                    <div class="level-left">
+                      <div class="tags">
+                        <span class="tag is-success">
+                          Asistentes: {{event.yes_rsvp_count}}
+                        </span>
+                        <span class="tag is-info">
+                          Lugar: {{event.venue.name}}
+                        </span>
+                        <span class="tag is-info">
+                          Fecha/Hora: {{event.local_date}} / {{event.local_time}}
+                        </span>
+                      </div>
+                    </div>
+                  </nav>
                 </div>
-              </nav>
+              </article>
+            </a>
+          </div>
+          <div v-else class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content has-text-centered">
+                  <h3>
+                    No hay proximos eventos programados 💔
+                  </h3>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="box has-background-js-primary">
+            <article class="media">
+              <div class="media-content">
+                <div class="content is-info has-text-centered">
+                  <h5>
+                    ¿Quieres proponer/exponer una charla? Abre un issue en nuestro
+                    repositorio de <a href="https://github.com/IbagueJS/charlas"> Github </a> con tu
+                    propuesta.
+                  </h5>
+                </div>
+              </div>
+            </article>
+          </div>
+          <br/>
+          <br/>
+          <h1 class="title">
+            Eventos Pasados
+          </h1>
+            <div v-for="event in events" v-if="event.status === 'past'" class="box">
+              <a v-bind:href="event.link" target="new">
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <h4><span class="tag is-info">{{event.local_date}}</span> {{event.name}}  </h4>
+                    </div>
+                  </div>
+                </article>
+              </a>
             </div>
-          </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- About -->
-    <section class="section has-text-centered has-background-info">
+    <section class="section has-text-centered has-background-js">
       <div class="container">
-        <h1 class="title">Acerca de IbagueJS</h1>
-        <p>
+        <h1 class="title has-text-dark">Acerca de IbagueJS</h1>
+        <p class="has-text-dark">
           Acércate y aprende con nosotros, IbaguéJS es un espacio gratuito y
           libre para aprender y compartir conocimiento sobre JavaScript.
-          Nos regimos bajo un <a
+          Nos regimos bajo un <strong><a
           href="https://github.com/colombia-dev/codigo-de-conductad"
-          class="has-text-dark">Código de Conducta</a> que aplica a los integrantes,
+          class="has-text-dark">Código de Conducta</a></strong> que aplica a los integrantes,
           asistentes, patrocinadores y organizadores del grupo, esto con el
           objetivo de propiciar un ambiente sin acoso e inclusivo, al hacer
-          parte de este grupo entendemos que estás de acuerdo con nuestro <a
+          parte de este grupo entendemos que estás de acuerdo con nuestro <strong><a
           href="https://github.com/colombia-dev/codigo-de-conductad"
-          class="has-text-dark">Código de Conducta.</a>
+          class="has-text-dark">Código de Conducta.</a></strong>
         </p>
         <br />
-        <p class="">
+        <p class="has-text-dark">
           Nuestra filosofía será siempre la de mantener un ambiente informal,
           nada estricto en ningún sentido. Así que cualquier colaboración, en
           cualquier sentido, será muy bien recibida.
@@ -121,28 +158,28 @@
         </h2>
       </div>
     </section>
-    <!-- Footer --!>
-    <section class="section has-text-centered has-background-info">
+    <!-- Footer -->
+    <section class="section has-text-centered has-background-js">
       <div class="container">
-        <a class="button is-info" href="https://twitter.com/IbagueJS"
+        <a class="button is-js has-text-dark" href="https://twitter.com/IbagueJS"
         target="_blank">
           <span class="icon is-small">
             <i class="fab fa-twitter"></i>
           </span>
         </a>
-        <a class="button is-info" href="https://meetup.com/IbagueJS"
+        <a class="button is-js has-text-dark" href="https://meetup.com/IbagueJS"
         target="_blank">
           <span class="icon is-small">
             <i class="fab fa-meetup"></i>
           </span>
         </a>
-        <a class="button is-info" href="https://goo.gl/KKgcce"
+        <a class="button is-js has-text-dark" href="https://goo.gl/KKgcce"
         target="_blank">
           <span class="icon is-small">
             <i class="fab fa-slack"></i>
           </span>
         </a>
-        <a class="button is-info" href="https://githubb.com/IbagueJS"
+        <a class="button is-js has-text-dark" href="https://github.com/IbagueJS"
         target="_blank">
           <span class="icon is-small">
             <i class="fab fa-github"></i>

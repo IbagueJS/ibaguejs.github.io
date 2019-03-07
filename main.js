@@ -1,33 +1,26 @@
-var getMeetupData = function(url, data) {
-  return new Promise(function(resolve, reject) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('get', url, true);
-    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-    xhr.responseType = 'jsonp';
-    xhr.onload = function() {
-      var status = xhr.status;
-      if (status == 200) {
-        resolve(xhr.response);
-      } else {
-        reject(status);
-      }
-    };
-    xhr.send();
-  });
-};
-
+//import Event from './components/event'
 document.addEventListener('DOMContentLoaded', function() {
-  // Get upcomming events
-  getMeetupData('https://api.meetup.com/IbagueJS/events?callback=data&sign=true&photo-host=public&page=5&desc=true&status=upcoming').then(function (data) {
-    console.log(data)
-  }).catch(function (err) {
-    console.error('Imposible to retrieve data from Meetup', err.statusText)
-  })
-
-  // Get past events
-  getMeetupData('https://api.meetup.com/IbagueJS/events?desc=true&photo-host=public&page=5&sig_id=58958882&status=past&sig=ed0ea86cdefed016050db8ddc35b7f94fc0490c6').then(function (data) {
-    console.log(data)
-  }).catch(function (err) {
-    console.error('Imposible to retrieve data from Meetup', err.statusText)
-  })
+  // Get upcomming events and past events
+  $.ajax({
+    url: "https://api.meetup.com/IbagueJS/events?desc=true&photo-host=public&page=5&sig_id=223811643&status=upcoming%2Cpast&fields=featured_photo&sig=5b4d6197695c7d06cb505bd2e7906af644ef08e0",
+    jsonp: "callback",
+    dataType: "jsonp",
+    data: {
+      format: "json"
+    },
+    success: function (result) {
+      console.log(result.data)
+      var events = new Vue({
+        el: '#events',
+        data: { 
+          events: result.data
+        }
+      })
+    },
+    fail: function (err) {
+      console.error('Imposible to retrieve data from Meetup', err.status)
+    }
+  });
 }, false)
+
+
