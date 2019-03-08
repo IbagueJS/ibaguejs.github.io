@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <title>IbagueJS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css">
@@ -23,6 +24,11 @@
         padding-left: 5%;
         padding-right: 7%;
       }
+      .image-128x128{
+        width: 128px !important;
+        height: 128px !important;
+        margin-left: 5px;
+      }
     </style>
   </head>
   <body>
@@ -31,7 +37,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title has-text-dark">
-            [LOGO HERE]
+            <img src="assets/logo.png" alt="Logo IbagueJS">
           </h1>
           <h2 class="subtitle has-text-dark">
             Comunidad JavaScript de Ibague
@@ -40,50 +46,54 @@
       </div>
     </section>
     <!-- Event list -->
-    <div id="events">
       <section class="section has-text-centered">
         <div class="container">
           <h1 class="title">
             Proximos Eventos
           </h1>
-          <div v-for="event in events" v-if="event.status === 'past'" class="box">
-            <a v-bind:href="event.link" target="new">
+          <div id="events_upcoming">
+            <div v-if="events_upcoming.length">
+              <div v-for="event in events_upcoming" class="box">
+                <a v-bind:href="event.link" target="new">
+                  <article class="media">
+                    <div class="media-content">
+                      <div class="content">
+                        <h2>{{event.name}}</h2>
+                        <div class="has-text-light has-padding" v-html="event.description"></div>
+                      </div>
+                      <nav class="level is-mobile">
+                        <div class="level-left">
+                          <div class="tags">
+                            <span class="tag is-success">
+                              Asistentes: {{event.yes_rsvp_count}}
+                            </span>
+                            <span class="tag is-info">
+                              Lugar: {{event.venue.name}}
+                            </span>
+                            <span class="tag is-info">
+                              Fecha/Hora: {{event.local_date}} / {{event.local_time}}
+                            </span>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+            <div v-else class="box">
               <article class="media">
                 <div class="media-content">
-                  <div class="content">
-                    <h2>{{event.name}}</h2>
-                    <div class="has-text-light has-padding"  v-html="event.description"></div>
+                  <div class="content has-text-centered">
+                    <h3>
+                      No hay proximos eventos programados 💔
+                    </h3>
                   </div>
-                  <nav class="level is-mobile">
-                    <div class="level-left">
-                      <div class="tags">
-                        <span class="tag is-success">
-                          Asistentes: {{event.yes_rsvp_count}}
-                        </span>
-                        <span class="tag is-info">
-                          Lugar: {{event.venue.name}}
-                        </span>
-                        <span class="tag is-info">
-                          Fecha/Hora: {{event.local_date}} / {{event.local_time}}
-                        </span>
-                      </div>
-                    </div>
-                  </nav>
                 </div>
               </article>
-            </a>
+            </div>
           </div>
-          <div v-else class="box">
-            <article class="media">
-              <div class="media-content">
-                <div class="content has-text-centered">
-                  <h3>
-                    No hay proximos eventos programados 💔
-                  </h3>
-                </div>
-              </div>
-            </article>
-          </div>
+          <br/>
           <div class="box has-background-js-primary">
             <article class="media">
               <div class="media-content">
@@ -102,7 +112,8 @@
           <h1 class="title">
             Eventos Pasados
           </h1>
-            <div v-for="event in events" v-if="event.status === 'past'" class="box">
+          <div id="events_past">
+            <div v-for="event in events_past" class="box">
               <a v-bind:href="event.link" target="new">
                 <article class="media">
                   <div class="media-content">
@@ -113,9 +124,10 @@
                 </article>
               </a>
             </div>
+          </div>
         </div>
       </section>
-    </div>
+    
     <!-- About -->
     <section class="section has-text-centered has-background-js">
       <div class="container">
@@ -144,18 +156,61 @@
     <section class="section has-text-centered">
       <div class="container">
         <h1 class="title">Equipo Organizador</h1>
-        <h2 class="subtitle">
-          TBD
-        </h2>
+        <div id="organizers" class="columns is-desktop">
+          <div v-for="organizer in organizers" class="column is-one-third-desktop ">
+            <a v-bind:href="organizer.group_profile.link" target="new"> 
+              <div class="card">
+                <nav style="padding-top: 10px;" class="level">
+                  <div class="card-image level-item has-text-centered">
+                    <figure class='image is-128x128'>
+                      <img class="image-128x128" v-bind:src="organizer.photo.photo_link" alt="Image-organizer">
+                    </figure>
+                  </div>
+                </nav>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">{{organizer.name}}</p>
+                      <p class="subtitle is-6">{{organizer.group_profile.role === "organizer" ? "Organizador" : organizer.group_profile.role === "assistant_organizer" ? "Asistente Organizador" : organizer.group_profile.role}}</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    {{organizer.bio}}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>  
+        </div>
       </div>
     </section>
     <!-- Sponsors -->
     <section class="section has-text-centered">
       <div class="container">
         <h1 class="title">Patrocinadores</h1>
-        <h2 class="subtitle">
-          TBD
-        </h2>
+        <div class="columns is-mobile is-centered">
+          <div class="column  is-one-third-desktop">
+            <a href="https://nodesource.com/" target="_blank">
+              <figure class="image">
+                <img style="max-height: 250px;" src="assets/node-source.png">
+              </figure>
+            </a>
+          </div>
+          <div class="column  is-one-third-desktop">
+            <a href="https://colombia-dev.org" target="_blank">
+              <figure class="image">
+                <img style="max-height: 250px;" src="assets/colombia-dev.svg">
+              </figure>
+            </a>
+          </div>
+          <div class="column  is-one-third-desktop">
+            <a href="http://www.sti.org.co/" target="_blank">
+              <figure class="image">
+                <img style="max-height: 250px;" src="http://www.sti.org.co/images/plantilla/logo-sti.png">
+              </figure>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Footer -->
