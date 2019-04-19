@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+  directories:
+    - node_modules
+branches:
+  only:
+  - dev
+script:
+  - npm run build
+  - cd dist
+  - echo 'ibaguejs.com' > CNAME
+  - cd ..
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: dist
+  on:
+    branch: master
