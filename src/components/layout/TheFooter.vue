@@ -10,7 +10,7 @@
           class="mx-3 black--text",
           icon
         )
-          v-icon(size="18px") {{ link.icon }}
+          v-icon(size="24px") {{ link.icon }}
 </template>
 
 <script>

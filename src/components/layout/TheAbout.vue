@@ -2,7 +2,7 @@
   .about.has-background-js.py-3
     v-container(grid-list-md, text-xs-center)
       v-layout(row, justify-center, black--text)
-        v-flex.px-4(xs12)
+        v-flex.px-4(x12 lg8 offset-lg-2)
           h2.display-1.pb-3 Acerca de IbagueJS
           div(
             :class="{'mx-5 px-5': $vuetify.breakpoint.mdAndUp}"

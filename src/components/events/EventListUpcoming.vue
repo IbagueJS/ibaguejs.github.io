@@ -7,7 +7,10 @@
           :class="{'mx-5 px-5': $vuetify.breakpoint.mdAndUp}"
           v-html="event.description"
         )
-      v-flex(xs12, sm10, offset-sm1)
+      v-flex(
+        xs12,
+        :class="{'mx-5 px-5': $vuetify.breakpoint.mdAndUp}"
+        )
         v-chip(label, small, color="primary", text-color="white")
           v-avatar
             v-icon(size="14px") fas fa-map-marker-alt
