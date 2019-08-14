@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - "stable"
+  - 'stable'
 cache:
-  yarn: true
+  npm: true
   directories:
     - node_modules
 branches:
   only:
-  - dev
+    - dev
 script:
   - npm run build
   - cd dist
