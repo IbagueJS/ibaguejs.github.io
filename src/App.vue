@@ -34,6 +34,7 @@ export default {
 <style lang="scss">
 .theme--dark.application {
   background-color: #1f2424;
+  font-family: 'Fira Sans', sans-serif !important;
   .is-js,
   .has-background-js {
     background: #ffe400 !important;
