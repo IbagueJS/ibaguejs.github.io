@@ -30,7 +30,7 @@ export default {
           id: 1,
           page: 'http://www.sti.org.co/',
           image: require('@/assets/sti.png'),
-          maxHeight: '150px'
+          maxHeight: '186px'
         },
         {
           id: 2,

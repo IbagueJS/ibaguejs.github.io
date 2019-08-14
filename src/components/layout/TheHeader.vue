@@ -18,7 +18,7 @@
             v-img(
               height="auto",
               width="100%",
-              max-height="123px"
+              max-height="135px"
               :src="require('@/assets/logo.png')",
               alt="Logo IbagueJS"
               aspect-ratio="1",

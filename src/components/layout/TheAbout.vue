@@ -3,7 +3,7 @@
     v-container(grid-list-md, text-xs-center)
       v-layout(row, justify-center, black--text)
         v-flex.px-4(xs12 lg10 xl8 offset-xl1)
-          h2.display-1.mb-3 Acerca de IbagueJS
+          h2.display-1.mb-3 Acerca de IbaguéJS
           div
             p
               | Acércate y aprende con nosotros, IbaguéJS es un espacio gratuito y libre
