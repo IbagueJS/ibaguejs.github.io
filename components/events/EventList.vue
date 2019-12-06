@@ -71,27 +71,53 @@ export default {
       page: 5,
       upcomingEvents: [
         {
-          link: 'https://ti.to/ibaguejs/nodeschool-en-ibaguejs/registrations',
-          name: 'NodeSchool #1',
-          description: `<div class="text-xs-center">
-  <img alt="" class="event-logo img-responsive" src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1083533/f46da0c47167fd129cbe8494e318fc3d.png">
-  <div class="event-description markdown">
-    <p>¿Quieres aprender a programar pero no sabes por dónde empezar? ¿O tal vez ya codificas y deseas aprender más de JavaScript y Node ?</p>
-    <p>Ven y únete a <strong>NodeSchool</strong> organizado por <strong>IbagueJS</strong>, una iniciativa de comunidad que busca enseñar JavaScript y Node.js, a través de talleres presenciales utilizando workshoppers (talleres interactivos) como material de aprendizaje y contando con el acompañamiento de mentores.</p>
-    <p>No olvidar:
-    - Computador
-    - Tener instalado nodejs
-    - Tener instalado npm
-    - Editor de preferencia
-    - Cuenta en github.com</p>
-    <p><em>ANÍMATE TE ESPERAMOS!!</em></p>
+          link: 'https://ti.to/ibaguejs/directivas-angular-react-expresion',
+          name: 'Directivas en Angular + React en su mínima expresión',
+          description: `<div>
+  <div class="text-xs-center">
+    <img
+      alt=""
+      class="event-logo img-responsive"
+      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1087383/d4a47f6ff68c5281b1537107291f5de7.png"
+    />
   </div>
-</div>`,
+  <div>
+    <h3>🗣️ Directivas en Angular - Juan Suarez</h3>
+    <p>
+      En esta charla veremos qué son y cómo funcionan las directivas en Angular.
+    </p>
+    <h3>🗣️ React en su mínima expresión - Yeison Tapia</h3>
+    <p>
+      En esta charla vamos a entender React a partir de funciones básicas de
+      JavaScript, veremos que no siempre necesitamos un acoplamiento de varios
+      módulos para comenzar a aprender o desarrollar en esta tecnología.
+    </p>
+    <h3>📅 Información sobre la programación.</h3>
+    <ul>
+      <li>[ 10:00-10:15 ] Llegada asistentes + Networking.<br /></li>
+      <li>[ 10:15-11:00 ] Charla 1 + Preguntas.<br /></li>
+      <li>[ 11:00-11:15 ] Refrigerio + Networking.<br /></li>
+      <li>[ 11:15-12:00 ] Charla 2 + Preguntas.<br /></li>
+    </ul>
+    <h3>⚠️ Notas/Avisos:</h3>
+    <ul>
+      <li>Cada charla es de 30 minutos con 15 minutos para preguntas.</li>
+      <li>
+        Quienes lleven equipos electrónicos personales deben prestar mucha
+        atención al cuidado de sus pertenencias. Cada persona es responsable del
+        cuidado y de mantener sus pertenencias seguras.
+      </li>
+    </ul>
+    <br>
+    <div class="text-xs-center"><em>ANÍMATE TE ESPERAMOS!!!</em></div>
+  </div>
+</div>
+`,
           venue: {
             name: 'Boom Auditorio Stand-up | Carrera 5 # 43-182 · Ibagué'
           },
-          local_date: '2019-11-23',
-          local_time: '10:00 am',
+          local_date: '2019-12-14',
+          local_time: '2:00 pm',
           yes_rsvp_count: null
         }
       ],
