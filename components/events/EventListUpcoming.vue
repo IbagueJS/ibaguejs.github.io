@@ -8,7 +8,7 @@
           v-html="event.description"
         )
       v-flex(xs12)
-        tito-widget(event="ibaguejs/directivas-angular-react-expresion" v-pre)
+        tito-widget(event="ibaguejs/javascript-workshop-1" v-pre)
       v-flex(
         xs12,
         :class="{'mx-5 px-5': $vuetify.breakpoint.mdAndUp}"

@@ -71,37 +71,66 @@ export default {
       page: 5,
       upcomingEvents: [
         {
-          link: 'https://ti.to/ibaguejs/directivas-angular-react-expresion',
-          name: 'Directivas en Angular + React en su mínima expresión',
+          link: 'https://ti.to/ibaguejs/javascript-workshop-1',
+          name: 'JavaScript Workshop #1',
           description: `<div>
   <div class="text-xs-center">
     <img
       alt=""
       class="event-logo img-responsive"
-      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1087383/d4a47f6ff68c5281b1537107291f5de7.png"
+      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1088861/630a3815a886a89423b9b08428ef8972.png"
     />
   </div>
   <div>
-    <h3>🗣️ Directivas en Angular - Juan Suarez</h3>
+    <p>¿Listos para el Meetup del mes de Enero? ¡¡Empiezan los Workshops!!.</p>
+    <h3>💻 Manos a la obra</h3>
     <p>
-      En esta charla veremos qué son y cómo funcionan las directivas en Angular.
+      Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
+      este espacio te ayudará a comenzar. Este taller cubre los aspectos más
+      importantes de JavaScript.
     </p>
-    <h3>🗣️ React en su mínima expresión - Yeison Tapia</h3>
     <p>
-      Entenderemos React a partir de funciones básicas de
-      JavaScript, además veremos que no siempre necesitamos un acoplamiento de varios
-      módulos para comenzar a aprender o desarrollar en esta tecnología.
+      Esta serie de Workshops de JavaScript tendrán Seis sesiones, en esta primera
+      ocasión conoceremos sobre:
+    </p>
+    <p>
+      Introducción a JavaScript<br>
+      - Variables<br>
+      - Operadores<br>
+      - Tipos de datos<br>
+      - Eventos<br>
+      Condicionales<br>
+      - Ternary condition<br>
+      - Switch case<br>
+    </p>
+    <h3>🎯 Audiencia Objetivo</h3>
+    <p>
+      Personas con interés en aprender a programar en JavaScript, sin importar si
+      no tienen experiencia previa con un lenguaje de programación.
     </p>
     <h3>📅 Información sobre la programación.</h3>
     <ul>
-      <li>[ 14:00-14:15 ] Llegada asistentes + Networking.<br /></li>
-      <li>[ 14:15-15:00 ] Charla 1 + Preguntas.<br /></li>
-      <li>[ 15:00-15:15 ] Refrigerio + Networking.<br /></li>
-      <li>[ 15:15-16:00 ] Charla 2 + Preguntas.<br /></li>
+      <li>
+        [ 10:00 ] Bienvenida (Equipo @IbagueJs
+        <a href="http://twitter.com/ibaguejs" target="_parent"
+          >http://twitter.com/ibaguejs</a
+        >).
+      </li>
+      <li>[ 10:00-10:15 ] Llegada asistentes + Networking.</li>
+      <li>[ 10:15-11:45 ] Charla 1 + Preguntas.</li>
+      <li>[ 11:45-12:00 ] Refrigerio + Networking.</li>
+    </ul>
+    <p>
+      Los esperamos el próximo sábado 25 de Enero desde las 10:00 a.m, en la
+      Universidad de Ibagué.
+    </p>
+    <h3>🤔 Que no se nos olvide:</h3>
+    <ul>
+      <li>Computador</li>
+      <li>Editor de preferencia</li>
     </ul>
     <h3>⚠️ Notas/Avisos:</h3>
     <ul>
-      <li>Cada charla es de 30 minutos con 15 minutos para preguntas.</li>
       <li>
         Quienes lleven equipos electrónicos personales deben prestar mucha
         atención al cuidado de sus pertenencias. Cada persona es responsable del
@@ -109,15 +138,15 @@ export default {
       </li>
     </ul>
     <br>
-    <div class="text-xs-center"><em>ANÍMATE TE ESPERAMOS!!!</em></div>
+    <p class="text-xs-center"><em>ANÍMATE TE ESPERAMOS!!!</em></p>
   </div>
 </div>
 `,
           venue: {
-            name: 'Boom Auditorio Stand-up | Cr. 5 # 43-182'
+            name: 'Universidad de Ibagué'
           },
-          local_date: '2019-12-14',
-          local_time: '2:00 pm',
+          local_date: '2020-01-25',
+          local_time: '10:00 am',
           yes_rsvp_count: null
         }
       ],
