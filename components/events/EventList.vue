@@ -112,9 +112,9 @@ export default {
     <h3>📅 Información sobre la programación.</h3>
     <ul>
       <li>
-        [ 10:00 ] Bienvenida (Equipo @IbagueJs
+        [ 10:00 ] Bienvenida (Equipo
         <a href="http://twitter.com/ibaguejs" target="_parent"
-          >http://twitter.com/ibaguejs</a
+          >@IbagueJs</a
         >).
       </li>
       <li>[ 10:00-10:15 ] Llegada asistentes + Networking.</li>
