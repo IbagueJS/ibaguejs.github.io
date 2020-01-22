@@ -78,6 +78,7 @@ export default {
     <img
       alt=""
       class="event-logo img-responsive"
+      style="max-width: 100%; height: auto;"
       src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1088861/630a3815a886a89423b9b08428ef8972.png"
     />
   </div>
@@ -143,7 +144,7 @@ export default {
 </div>
 `,
           venue: {
-            name: 'Universidad de Ibagué'
+            name: 'La CUN - Carrera 5 No. 11 - 65'
           },
           local_date: '2020-01-25',
           local_time: '10:00 am',
