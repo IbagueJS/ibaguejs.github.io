@@ -72,7 +72,7 @@ export default {
       upcomingEvents: [
         {
           link: 'https://ti.to/ibaguejs/javascript-workshop-1',
-          name: 'JavaScript Workshop #1',
+          name: 'JavaScript Workshop #2',
           description: `<div>
   <div class="text-xs-center">
     <img
@@ -83,26 +83,23 @@ export default {
     />
   </div>
   <div>
-    <p>¿Listos para el Meetup del mes de Enero? ¡¡Empiezan los Workshops!!.</p>
+    <p>¿Listos para el Meetup del mes de Enero? ¡¡Siguen los Workshops!!.</p>
     <h3>💻 Manos a la obra</h3>
     <p>
-      Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
-      este espacio te ayudará a comenzar. Este taller cubre los aspectos más
-      importantes de JavaScript.
+   Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
+   este espacio te ayudará.
     </p>
     <p>
-      Esta serie de Workshops de JavaScript tendrán Seis sesiones, en esta primera
+      Esta es la segunda sesión de la serie de seis Workshops de JavaScript, en esta 
       ocasión conoceremos sobre:
     </p>
     <p>
-      Introducción a JavaScript<br>
-      - Variables<br>
-      - Operadores<br>
-      - Tipos de datos<br>
-      - Eventos<br>
-      Condicionales<br>
-      - Ternary condition<br>
-      - Switch case<br>
+     
+      - Strings<br>
+      - Arrays<br>
+      - Ciclos<br>
+      
+    
     </p>
     <h3>🎯 Audiencia Objetivo</h3>
     <p>
@@ -122,8 +119,7 @@ export default {
       <li>[ 11:45-12:00 ] Refrigerio + Networking.</li>
     </ul>
     <p>
-      Los esperamos el próximo sábado 25 de Enero desde las 10:00 a.m, en la
-      CUN Ibagué.
+      Los esperamos el próximo sábado 8 de Febrero desde las 10:00 a.m, en el salón 24 de la Universidad de Ibagué.
     </p>
     <h3>🤔 Que no se nos olvide:</h3>
     <ul>
@@ -137,9 +133,7 @@ export default {
         atención al cuidado de sus pertenencias. Cada persona es responsable del
         cuidado y de mantener sus pertenencias seguras.
       </li>
-      <li>
-      <a href="https://github.com/IbagueJS/workshop-javascript/tree/master/taller-1/">Enlace al taller</a>
-      </li>
+
     </ul>
     <br>
     <p class="text-xs-center"><em>ANÍMATE TE ESPERAMOS!!!</em></p>
@@ -147,9 +141,9 @@ export default {
 </div>
 `,
           venue: {
-            name: 'La CUN - Carrera 5 No. 11 - 65'
+            name: 'Universidad de Ibagué Salón 24'
           },
-          local_date: '2020-01-25',
+          local_date: '2020-02-08',
           local_time: '10:00 am',
           yes_rsvp_count: null
         }
