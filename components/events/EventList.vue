@@ -78,8 +78,8 @@ export default {
     <img
       alt=""
       class="event-logo img-responsive"
-      style="max-width: 100%; height: auto;"
-      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1088861/630a3815a886a89423b9b08428ef8972.png"
+      style="max-width: 100%; height: auto; width: 480px;"
+      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1089666/7b00526d76cb83268c03972243923a74.png"
     />
   </div>
   <div>
