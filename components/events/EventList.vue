@@ -71,7 +71,7 @@ export default {
       page: 5,
       upcomingEvents: [
         {
-          link: 'https://ti.to/ibaguejs/javascript-workshop-1',
+          link: 'https://ti.to/ibaguejs/javascript-workshop-2',
           name: 'JavaScript Workshop #2',
           description: `<div>
   <div class="text-xs-center">
@@ -83,7 +83,7 @@ export default {
     />
   </div>
   <div>
-    <p>¿Listos para el Meetup del mes de Enero? ¡¡Siguen los Workshops!!.</p>
+    <p>¿Listos para el Meetup del mes de Febrero? ¡¡¡Continúan los Workshops!!!</p>
     <h3>💻 Manos a la obra</h3>
     <p>
    Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
