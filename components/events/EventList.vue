@@ -86,20 +86,15 @@ export default {
     <p>¿Listos para el Meetup del mes de Febrero? ¡¡¡Continúan los Workshops!!!</p>
     <h3>💻 Manos a la obra</h3>
     <p>
-   Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
-   este espacio te ayudará.
+      Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar, este espacio te ayudará a comenzar. Este taller cubre los aspectos más importantes de JavaScript.
     </p>
     <p>
-      Esta es la segunda sesión de la serie de seis Workshops de JavaScript, en esta 
-      ocasión conoceremos sobre:
+      Esta serie de Workshops de JavaScript tendrán Seis sesiones, en esta segunda ocasión conoceremos sobre:
     </p>
     <p>
-     
       - Strings<br>
       - Arrays<br>
       - Ciclos<br>
-      
-    
     </p>
     <h3>🎯 Audiencia Objetivo</h3>
     <p>
@@ -136,7 +131,7 @@ export default {
 
     </ul>
     <br>
-    <p class="text-xs-center"><em>ANÍMATE TE ESPERAMOS!!!</em></p>
+    <p class="text-xs-center"><em>¡¡¡ANÍMATE TE ESPERAMOS!!!</em></p>
   </div>
 </div>
 `,
