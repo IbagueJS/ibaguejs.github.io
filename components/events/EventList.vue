@@ -74,10 +74,18 @@ export default {
           link: 'https://ti.to/ibaguejs/primer-aniversario-ibaguejs',
           name: 'Primer Aniversario IbaguéJS',
           description: `<div>
+  <div class="text-xs-center">
+    <img 
+      alt=""
+      class="event-logo img-responsive"
+      style="max-width: 100%; height: auto; width: 360px;"
+      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1090650/8e40bda51809634293c90ce3992d2233.png">
+  </div>
   <div>
     <p>🎉 ¡ Estamos de cumpleaños ! 🎊</p>
     <p>Queremos celebrar con toda nuestra comunidad este grandioso año, que ha estado lleno de conocimiento y oportunidades, sin ustedes, quienes asisten a cada evento o taller no estaríamos aquí, ni motivados de continuar impulsando JavaScript y las comunidades en Ibagué!</p>
     <p>Ven el próximo Sábado 29 de Febrero desde las 10:00 AM, en el Auditorio BOOM en la Carrera 5 # 43 - 147, y celebra con nosotros.</p>
+    <p>📅 Información sobre la programación.</p>
     <ul>
       <li>Bienvenida Equipo @IbagueJS.</li>
       <li>Actividades Sorpresa 💙</li>
