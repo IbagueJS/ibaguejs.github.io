@@ -71,74 +71,25 @@ export default {
       page: 5,
       upcomingEvents: [
         {
-          link: 'https://ti.to/ibaguejs/javascript-workshop-2',
-          name: 'JavaScript Workshop #2',
+          link: 'https://ti.to/ibaguejs/primer-aniversario-ibaguejs',
+          name: 'Primer Aniversario IbaguéJS',
           description: `<div>
-  <div class="text-xs-center">
-    <img
-      alt=""
-      class="event-logo img-responsive"
-      style="max-width: 100%; height: auto; width: 480px;"
-      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1089666/7b00526d76cb83268c03972243923a74.png"
-    />
-  </div>
   <div>
-    <p>¿Listos para el Meetup del mes de Febrero? ¡¡¡Continúan los Workshops!!!</p>
-    <h3>💻 Manos a la obra</h3>
-    <p>
-      Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar, este espacio te ayudará a comenzar. Este taller cubre los aspectos más importantes de JavaScript.
-    </p>
-    <p>
-      Esta serie de Workshops de JavaScript tendrán Seis sesiones, en esta segunda ocasión conoceremos sobre:
-    </p>
-    <p>
-      - Strings<br>
-      - Arrays<br>
-      - Ciclos<br>
-    </p>
-    <h3>🎯 Audiencia Objetivo</h3>
-    <p>
-      Personas con interés en aprender a programar en JavaScript, sin importar si
-      no tienen experiencia previa con un lenguaje de programación.
-    </p>
-    <h3>📅 Información sobre la programación.</h3>
+    <p>🎉 ¡ Estamos de cumpleaños ! 🎊</p>
+    <p>Queremos celebrar con toda nuestra comunidad este grandioso año, que ha estado lleno de conocimiento y oportunidades, sin ustedes, quienes asisten a cada evento o taller no estaríamos aquí, ni motivados de continuar impulsando JavaScript y las comunidades en Ibagué!</p>
+    <p>Ven el próximo Sábado 29 de Febrero desde las 10:00 AM, en el Auditorio BOOM en la Carrera 5 # 43 - 147, y celebra con nosotros.</p>
     <ul>
-      <li>
-        [ 10:00 ] Bienvenida (Equipo
-        <a href="http://twitter.com/ibaguejs" target="_parent"
-          >@IbagueJs</a
-        >).
-      </li>
-      <li>[ 10:00-10:15 ] Llegada asistentes + Networking.</li>
-      <li>[ 10:15-11:45 ] Charla 1 + Preguntas.</li>
-      <li>[ 11:45-12:00 ] Refrigerio + Networking.</li>
+      <li>Bienvenida Equipo @IbagueJS.</li>
+      <li>Actividades Sorpresa 💙</li>
+      <li>Networking Time 🍔</li>
     </ul>
-    <p>
-      Los esperamos el próximo sábado 8 de Febrero desde las 10:00 a.m, en el salón 24 de la Universidad de Ibagué.
-    </p>
-    <h3>🤔 Que no se nos olvide:</h3>
-    <ul>
-      <li>Computador</li>
-      <li>Editor de preferencia</li>
-    </ul>
-    <h3>⚠️ Notas/Avisos:</h3>
-    <ul>
-      <li>
-        Quienes lleven equipos electrónicos personales deben prestar mucha
-        atención al cuidado de sus pertenencias. Cada persona es responsable del
-        cuidado y de mantener sus pertenencias seguras.
-      </li>
-
-    </ul>
-    <br>
-    <p class="text-xs-center"><em>¡¡¡ANÍMATE TE ESPERAMOS!!!</em></p>
   </div>
 </div>
 `,
           venue: {
-            name: 'Universidad de Ibagué Salón 24'
+            name: 'Auditorio BOOM Ibagué'
           },
-          local_date: '2020-02-08',
+          local_date: '2020-02-29',
           local_time: '10:00 am',
           yes_rsvp_count: null
         }
