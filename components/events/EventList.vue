@@ -78,6 +78,7 @@ export default {
     <p>🎉 ¡ Estamos de cumpleaños ! 🎊</p>
     <p>Queremos celebrar con toda nuestra comunidad este grandioso año, que ha estado lleno de conocimiento y oportunidades, sin ustedes, quienes asisten a cada evento o taller no estaríamos aquí, ni motivados de continuar impulsando JavaScript y las comunidades en Ibagué!</p>
     <p>Ven el próximo Sábado 29 de Febrero desde las 10:00 AM, en el Auditorio BOOM en la Carrera 5 # 43 - 147, y celebra con nosotros.</p>
+    <p>📅 Información sobre la programación.</p>
     <ul>
       <li>Bienvenida Equipo @IbagueJS.</li>
       <li>Actividades Sorpresa 💙</li>
