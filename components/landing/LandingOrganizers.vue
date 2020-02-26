@@ -35,10 +35,16 @@ export default {
       organizers: []
     }
   },
-  created() {
-    MeetupService.getOrganizers(this.page).then(
-      res => (this.organizers = res.data)
-    )
+  mounted() {
+
+    this.$nextTick(function () {
+      MeetupService.getOrganizers(this.page)
+        .then(res => {
+          this.organizers = res.data
+        })
+    })
+
+    
   },
   methods: {
     getRole(role) {

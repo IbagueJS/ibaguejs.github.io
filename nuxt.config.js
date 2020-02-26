@@ -1,12 +1,35 @@
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+const builtAt = new Date().toISOString()
+const path = require('path')
+const { I18N } = require('./locales/i18n-nuxt-config')
 const pkg = require('./package')
+import fs from 'fs'
+import Mode from "frontmatter-markdown-loader/mode"
+import MarkdownIt from 'markdown-it'
+import mip from 'markdown-it-prism'
+
+function getPaths (lang, type) {
+  let initial = lang
+  if (lang === 'en') { initial = '' }
+  return fs.readdirSync(path.resolve(__dirname, 'contents', `${lang}/${type}`))
+    .filter(filename => path.extname(filename) === '.md')
+    .map(filename => `${initial}/${type}/${path.parse(filename).name}`)
+}
+
+const md = new MarkdownIt({
+  html: true,
+  typographer: true
+})
+md.use(mip)
+
+const productionUrl = {
+  en: "/en",
+  es: "/es"
+};
+const baseUrl = 'https://ibaguejs.com/';
 
 module.exports = {
   mode: 'universal',
-
-  /*
-   ** Headers of the page
-   */
   head: {
     htmlAttrs: {
       lang: 'es'
@@ -16,6 +39,9 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
+    ],
+    script: [
+      
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -31,30 +57,22 @@ module.exports = {
       }
     ]
   },
-
   /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-
+  ** Customize the progress-bar color
+  */
+  loading: {
+    color: '#fff',
+    height: '3px'
+  },
   /*
-   ** Global CSS
-   */
-  css: ['~/assets/style/app.styl', '@fortawesome/fontawesome-free/css/all.css'],
+  ** Build configuration
+  */
+  css: [
+    
+    '@fortawesome/fontawesome-free/css/all.css',
+    '~/assets/style/app.styl'
+  ],
 
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: ['~/plugins/vuetify', { src: '~/plugins/ga.js', mode: 'client' }],
-
-  /*
-   ** Nuxt.js modules
-   */
-  modules: ['@nuxtjs/pwa'],
-
-  /*
-   ** Build configuration
-   */
   build: {
     transpile: ['vuetify/lib'],
     plugins: [new VuetifyLoaderPlugin()],
@@ -63,19 +81,72 @@ module.exports = {
         import: ['~assets/style/variables.styl']
       }
     },
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+
+    extend (config) {
+      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg|webp)$/i')
+      config.module.rules.splice(config.module.rules.indexOf(rule), 1)
+
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        include: path.resolve(__dirname, 'contents'),
+        options: {
+          mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
+          vue: {
+            root: "dynamicMarkdown"
+          },
+          markdown(body) {
+            return md.render(body)
+          }
+        }
+      }, {
+        test: /\.(jpe?g|png)$/i,
+        loader: 'responsive-loader',
+        options: {
+          placeholder: true,
+          quality: 60,
+          size: 1400,
+          adapter: require('responsive-loader/sharp')
+        }
+      }, {
+        test: /\.(gif|svg)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000,
+          name: 'img/[name].[hash:7].[ext]'
+        }
+      });
     }
+  },
+  plugins: ['~/plugins/vuetify','~/plugins/lazyload', '~/plugins/globalComponents', { src: '~plugins/ga.js', ssr: false }],
+  modules: [  
+    '@nuxtjs/style-resources',
+    ['nuxt-i18n', I18N],
+    'nuxt-webfontloader',
+    '@nuxtjs/pwa'
+  ],
+
+  styleResources: {
+    scss: [
+      '@/assets/css/utilities/_variables.scss',
+      '@/assets/css/utilities/_helpers.scss',
+      '@/assets/css/base/_grid.scss',
+      '@/assets/css/base/_buttons.scss'
+    ],
+  },
+
+  webfontloader: {
+    //custom: {
+    //  families: ['Graphik', 'Tiempos Headline'],
+    //  urls: ['/fonts/fonts.css']
+    //}
+  },
+
+  generate: {
+    routes: [
+      '/es', '404'
+    ]
+    //.concat(getPaths('es', 'blog'))
+    //.concat(getPaths('en', 'blog'))
   }
 }

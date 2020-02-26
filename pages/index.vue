@@ -6,18 +6,53 @@
       :paddingLayout="paddingLayout"
       :paddingFlex="paddingFlex"
     )
-    .ibg-landing-container
-      landing
+    .ibg-landing-container      
+      EventList(:events="events")
+      LandingPR
+      TheAbout
+      LandingOrganizers
+      LandingSponsors
+      LandingSupports
 </template>
 
 <script>
+import BlogSection from "~/components/Sections/BlogSection"
+import blogsEn from '~/contents/en/blogsEn.js'
+import blogsEs from '~/contents/es/blogsEs.js'
 import TheHeader from '~/components/layout/TheHeader.vue'
-import Landing from '~/components/landing/Landing.vue'
+import EventList from '~/components/events/EventList.vue'
+import LandingPR from '~/components/landing/LandingPR.vue'
+import TheAbout from '~/components/layout/TheAbout.vue'
+import LandingOrganizers from '~/components/landing/LandingOrganizers.vue'
+import LandingSponsors from '~/components/landing/LandingSponsors.vue'
+import LandingSupports from '~/components/landing/LandingSupports.vue'
+
 
 export default {
+  async asyncData ({app}) {
+    const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+    
+    async function asyncImport (blogName) {
+      const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
+      return wholeMD.attributes
+    }
+    return Promise.all(blogs.map(blog => asyncImport(blog)))
+    .then((res) => {
+      return {
+        events: res.reverse()
+      }
+    })
+  },
   components: {
+    BlogSection,
     TheHeader,
-    Landing
+    EventList,
+    LandingPR,
+    TheAbout,
+    LandingOrganizers,
+    LandingSponsors,
+    LandingSupports,
+    
   },
   data() {
     return {

@@ -14,7 +14,7 @@
           xs12,
           :class="{'py-4': $vuetify.breakpoint.mdAndUp}"
         )
-          h1.pb-2
+          h1.pb-2s
             v-img(
               height="auto",
               width="100%",

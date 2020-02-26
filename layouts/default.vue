@@ -1,22 +1,20 @@
 <template>
-  <v-app dark>
+ <v-app dark>
     <v-content>
       <nuxt />
       <the-footer />
     </v-content>
   </v-app>
 </template>
-
 <script>
-import TheFooter from '~/components/layout/TheFooter.vue'
+  import TheFooter from '~/components/layout/TheFooter.vue'
 
-export default {
-  components: {
-    TheFooter
+  export default {
+    components: {
+      TheFooter
+    }
   }
-}
 </script>
-
 <style lang="scss">
 .theme--dark.application {
   background-color: #1f2424;
@@ -32,11 +30,6 @@ export default {
   }
   a {
     text-decoration: none;
-  }
-  .v-chip {
-    .v-chip__content {
-      cursor: pointer;
-    }
   }
 }
 </style>

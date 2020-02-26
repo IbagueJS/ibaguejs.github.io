@@ -25,12 +25,7 @@ export default {
         },
         { id: 2, url: 'https://twitter.com/IbagueJS', icon: 'fab fa-twitter' },
         { id: 3, url: 'https://meetup.com/IbagueJS', icon: 'fab fa-meetup' },
-        {
-          id: 4,
-          url:
-            'https://join.slack.com/t/ibague-js/shared_invite/enQtNTM4NTQxNzA0MDE3LWJjMzI2YTMzNDMyYjMwZGRiODE4ODAzM2E2Njc0MmNhZmJhODUyY2E3Yzg0NDFjNmEzNTllZTEyMGY4ZDU5OGU',
-          icon: 'fab fa-slack'
-        },
+        { id: 4, url: 'https://join.slack.com/t/ibague-js/shared_invite/enQtNTM4NTQxNzA0MDE3LWJjMzI2YTMzNDMyYjMwZGRiODE4ODAzM2E2Njc0MmNhZmJhODUyY2E3Yzg0NDFjNmEzNTllZTEyMGY4ZDU5OGU', icon: 'fab fa-slack' },
         { id: 5, url: 'https://github.com/IbagueJS', icon: 'fab fa-github' }
       ]
     }
