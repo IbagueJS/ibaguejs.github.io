@@ -71,33 +71,75 @@ export default {
       page: 5,
       upcomingEvents: [
         {
-          link: 'https://ti.to/ibaguejs/primer-aniversario-ibaguejs',
-          name: 'Primer Aniversario IbaguéJS',
+          link: 'https://ti.to/ibaguejs/javascript-workshop-3',
+          name: 'JavaScript Workshop #3',
           description: `<div>
   <div class="text-xs-center">
     <img 
       alt=""
       class="event-logo img-responsive"
       style="max-width: 100%; height: auto; width: 360px;"
-      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1090650/8e40bda51809634293c90ce3992d2233.png">
+      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1091174/75b37f0cb4d0a6fb23c2c2167daa7dd6.png">
   </div>
   <div>
-    <p>🎉 ¡ Estamos de cumpleaños ! 🎊</p>
-    <p>Queremos celebrar con toda nuestra comunidad este grandioso año, que ha estado lleno de conocimiento y oportunidades, sin ustedes, quienes asisten a cada evento o taller no estaríamos aquí, ni motivados de continuar impulsando JavaScript y las comunidades en Ibagué!</p>
-    <p>Ven el próximo Sábado 29 de Febrero desde las 10:00 AM, en el Auditorio BOOM en la Carrera 5 # 43 - 147, y celebra con nosotros.</p>
+    <p>💻 Manos a la Obra</p>
+    <p>
+      Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
+      este espacio te ayudará a comenzar. Este taller cubre los aspectos más
+      importantes de JavaScript.
+    </p>
+    <p>
+      Esta serie de Workshops de JavaScript tendrán Seis sesiones, en esta tercera
+      ocasión conoceremos sobre:
+    </p>
+    <ul>
+      <li>Number</li>
+      <li>Object</li>
+      <li>Map</li>
+      <li>Set</li>
+    </ul>
+    <p>🎯 Audiencia Objetivo</p>
+    <p>
+      Personas con interés en aprender a programar en JavaScript, sin importar si
+      no tienen experiencia previa con un lenguaje de programación.
+    </p>
     <p>📅 Información sobre la programación.</p>
     <ul>
-      <li>Bienvenida Equipo @IbagueJS.</li>
-      <li>Actividades Sorpresa 💙</li>
-      <li>Networking Time 🍔</li>
+      <li>
+        [ 10:00 ] Bienvenida @IbagueJS.
+      </li>
+      <li>[ 10:00-10:15 ] Llegada asistentes + Networking.</li>
+      <li>[ 10:15-11:45 ] Workshop!</li>
+      <li>[ 11:45-12:00 ] Refrigerio + Networking.</li>
     </ul>
+    <p>
+      Los esperamos el próximo sábado 14 de Marzo desde las 10:00 a.m, en la Nave
+      4, Ambiente 4204 del SENA Centro de Industria y de la Construcción Sede
+      Picaleña.
+    </p>
+    <p>🤔 Que no se nos olvide:</p>
+    <ul>
+      <li>Computador</li>
+      <li>Editor de preferencia</li>
+    </ul>
+    <p>⚠️ Notas/Avisos:</p>
+    <ul>
+      <li>
+        Quienes lleven equipos electrónicos personales deben prestar mucha
+        atención al cuidado de sus pertenencias. Cada persona es responsable del
+        cuidado y de mantener sus pertenencias seguras.
+      </li>
+    </ul>
+    <br>
+    <p>¡¡¡ANÍMATE TE ESPERAMOS!!!</p>
   </div>
+
 </div>
 `,
           venue: {
-            name: 'Auditorio BOOM Ibagué'
+            name: 'SENA Sede Picaleña'
           },
-          local_date: '2020-02-29',
+          local_date: '2020-03-14',
           local_time: '10:00 am',
           yes_rsvp_count: null
         }
