@@ -16,7 +16,7 @@
               v-for="tab in tabs",
               :key="tab.id",
               ripple
-            ) 
+            )
               h3.subheading {{ tab.name }}
             v-tab-item(
               v-for="tab in tabs",
@@ -45,8 +45,8 @@
             v-card-text(class="pa-3 text-xs-center")
               h5.subheading.font-weight-medium
                 | ¿Quieres proponer/exponer una charla? Abre un issue en nuestro
-                | repositorio de 
-                a(href="https://github.com/IbagueJS/charlas", class="teal--text text--accent-4") Github 
+                | repositorio de
+                a(href="https://github.com/IbagueJS/charlas", class="teal--text text--accent-4") Github
                 | con tu propuesta.
 </template>
 
@@ -71,75 +71,57 @@ export default {
       page: 5,
       upcomingEvents: [
         {
-          link: 'https://ti.to/ibaguejs/javascript-workshop-3',
-          name: 'JavaScript Workshop #3',
+          link: 'https://www.twitch.tv/ibaguejs',
+          name: 'Meetup de Abril!',
           description: `<div>
   <div class="text-xs-center">
-    <img 
+    <img
       alt=""
       class="event-logo img-responsive"
       style="max-width: 100%; height: auto; width: 360px;"
-      src="https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1091174/75b37f0cb4d0a6fb23c2c2167daa7dd6.png">
+      src="https://secure.meetupstatic.com/photos/event/2/3/f/4/highres_490209204.jpeg">
   </div>
   <div>
-    <p>💻 Manos a la Obra</p>
     <p>
-      Si quieres ser un/una JavaScript Developer pero no sabes por dónde empezar,
-      este espacio te ayudará a comenzar. Este taller cubre los aspectos más
-      importantes de JavaScript.
+      Este mes tendremos dos temas interesantes de conocer en el mundo JavaScript,
+      un nuevo Framework que quiere revolucionar el mundo front-end como lo es Svelte y
+      una herramienta para hacer pruebas Unitarias llamada Mocha.
     </p>
     <p>
-      Esta serie de Workshops de JavaScript tendrán Seis sesiones, en esta tercera
-      ocasión conoceremos sobre:
+      🎙️ Svelte - Oscar Barajas @gndx
     </p>
-    <ul>
-      <li>Number</li>
-      <li>Object</li>
-      <li>Map</li>
-      <li>Set</li>
-    </ul>
-    <p>🎯 Audiencia Objetivo</p>
     <p>
-      Personas con interés en aprender a programar en JavaScript, sin importar si
-      no tienen experiencia previa con un lenguaje de programación.
+      🎙️ Pruebas unitarias con Mocha - Pablo Dorado @pandres95
     </p>
     <p>📅 Información sobre la programación.</p>
     <ul>
-      <li>
-        [ 10:00 ] Bienvenida @IbagueJS.
-      </li>
-      <li>[ 10:00-10:15 ] Llegada asistentes + Networking.</li>
-      <li>[ 10:15-11:45 ] Workshop!</li>
-      <li>[ 11:45-12:00 ] Refrigerio + Networking.</li>
+      <li>[ 10:00 - 10:15 ] Bienvenida @IbagueJS.</li>
+      <li>[ 10:15 - 11:00 ] Svelte</li>
+      <li>[ 11:00 - 11:45 ] Pruebas unitarias con Mocha</li>
+      <li>[ 11:45 - 12:00 ] Preguntas.</li>
     </ul>
+    <p></p>
     <p>
-      Los esperamos el próximo sábado 14 de Marzo desde las 10:00 a.m, en la Nave
-      4, Ambiente 4204 del SENA Centro de Industria y de la Construcción Sede
-      Picaleña.
+      Los esperamos el próximo sábado 25 de Abril desde las 10:00 a.m, en nuestro
+      canal de Twitch, búscanos como @ibaguejs.
     </p>
-    <p>🤔 Que no se nos olvide:</p>
-    <ul>
-      <li>Computador</li>
-      <li>Editor de preferencia</li>
-    </ul>
     <p>⚠️ Notas/Avisos:</p>
-    <ul>
-      <li>
-        Quienes lleven equipos electrónicos personales deben prestar mucha
-        atención al cuidado de sus pertenencias. Cada persona es responsable del
-        cuidado y de mantener sus pertenencias seguras.
-      </li>
-    </ul>
+    <p>
+      Recuerden hacer todas las preguntas que tengan, y que nunca hay una pregunta
+      que no sea digna de realizarse, así como la respuesta te puede ayudar a tí,
+      lo puede hacer a muchos otros. También recuerda llevar un trato amable en
+      el chat tanto hacia los speakers como con los demás participantes.
+    </p>
     <br>
-    <p>¡¡¡ANÍMATE TE ESPERAMOS!!!</p>
+    <p>¡¡ANÍMATE TE ESPERAMOS!!</p>
   </div>
 
 </div>
 `,
           venue: {
-            name: 'SENA Sede Picaleña'
+            name: 'Twitch - @ibaguejs'
           },
-          local_date: '2020-03-14',
+          local_date: '2020-04-25',
           local_time: '10:00 am',
           yes_rsvp_count: null
         }
