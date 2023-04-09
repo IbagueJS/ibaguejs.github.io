@@ -1,13 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { ChakraProvider } from '@chakra-ui/react'
 import { Main } from '../components/Main/Main';
 ---
 
 <Layout title="IbaguéJS | Comunidad de Javascript">
-  <ChakraProvider>
-    <Main client:only="react" />
-  </ChakraProvider>
+  <Main client:only="react" />
 </Layout>
 
 <style>

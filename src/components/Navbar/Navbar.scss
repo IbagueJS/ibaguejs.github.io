@@ -1,50 +1,77 @@
 .navbar {
-  display: flex;
-  height: 64px;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 24px;
-  border-bottom: 1px solid var(--blackAlpha-100);
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
-  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 80px;
+  justify-content: space-between;
+  padding: 24px;
+  position: fixed;
+  -webkit-backdrop-filter: blur(10px);
+  width: 100%;
 
   &__icon {
-    width: 55px;
+    width: 118px;
   }
 
-  .section-links {
-    display: flex;
-    margin-left: 12px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    height: 64px;
-
-    li {
-      a {
-        text-decoration: none;
-        color: var(--primary-500);
-        padding: 8px;
-      }
-    }
-  }
 
   &__right {
     display: flex;
     height: 64px;
     align-items: center;
 
+    .section-links {
+      align-items: center;
+      display: none;
+      height: 64px;
+      margin: 0;
+      list-style: none;
+      padding: 0 16px;
+      text-transform: uppercase;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #403900;
+          padding: 8px;
+
+          &.active,
+          &:hover {
+            color: #807300;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .chakra-button {
+      display: none;
+      text-transform: uppercase;
+    }
+
     .menu {
-      color: var(--primary-500);
+      display: block;
+      color: #403900;
     }
   }
 
 
-  @media (max-width: 640px) {
+  @media (min-width: 640px) {
+    padding: 24px 80px;
 
     .section-links {
+      display: flex;
+    }
+
+    .chakra-button {
+      display: block;
+    }
+
+    .menu {
       display: none;
     }
   }
