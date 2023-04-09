@@ -1,5 +1,6 @@
 import { Button } from '@chakra-ui/react'
 import './Navbar.scss'
+import { MenuButton } from '../MenuButton/MenuButton'
 
 export const Navbar = () => {
   return (
@@ -23,7 +24,7 @@ export const Navbar = () => {
         <Button color='yellow.100' colorScheme='yellow'>
           ser colaborador
         </Button>
-        <span className="menu material-icons">menu</span>
+        <MenuButton />
       </div>
     </nav>
   )
