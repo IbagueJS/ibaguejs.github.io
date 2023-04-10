@@ -1,10 +1,13 @@
-import { Button } from '@chakra-ui/react'
+import { Button, useBoolean } from '@chakra-ui/react'
 import './Navbar.scss'
 import { MenuButton } from '../MenuButton/MenuButton'
+import classNames from 'classnames'
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useBoolean()
+
   return (
-    <nav className='navbar'>
+    <nav className={classNames('navbar', { 'is-open': isOpen})}>
       <img className='navbar__icon' src="ibaguejs_black_and_white.png" alt="" />
       <div className="navbar__right">
         <ul className="section-links">
@@ -21,11 +24,11 @@ export const Navbar = () => {
               <a href="#organizers">Organizadores</a>
           </li>
         </ul>
-        <Button color='yellow.100' colorScheme='yellow'>
+        <Button className="sponsor-button" color='yellow.100' colorScheme='yellow'>
           ser colaborador
         </Button>
-        <MenuButton />
       </div>
+      <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
     </nav>
   )
 }

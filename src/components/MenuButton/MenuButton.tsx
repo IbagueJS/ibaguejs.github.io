@@ -1,12 +1,9 @@
-import { useBoolean } from '@chakra-ui/react'
 import './MenuButton.scss'
 import classNames from 'classnames'
 
-export const MenuButton = () => {
-  const [open, setOpen] = useBoolean()
-
+export const MenuButton = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any }) => {
   return (
-    <div className={classNames('menu-btn', { close: !open})} onClick={setOpen.toggle}>
+    <div className={classNames('menu-btn', { open: isOpen})} onClick={setIsOpen.toggle}>
       <div className="btn-line"></div>
       <div className="btn-line"></div>
       <div className="btn-line"></div>
