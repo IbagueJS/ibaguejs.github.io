@@ -1,7 +1,7 @@
-import { Title } from '../Title/Title'
 import { Navbar } from '../Navbar/Navbar'
 import { extendTheme, ChakraProvider, Container } from '@chakra-ui/react'
-import { Hero } from '../Banner/Hero'
+import { Hero } from '../Hero/Hero'
+import { SponsorBanner } from '../SponsorBanner/SponsorBanner'
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -22,15 +22,8 @@ export const Main = () => {
         <Container maxWidth="1352px" centerContent>
           <Navbar />
           <Hero />
-          <Title className="text-gradient" />
-          <p className="instructions">
-            To get started, open the directory <code>src/pages</code> in your
-            project.
-            <br />
-            <strong>Code Challenge:</strong> Tweak the "Welcome to Astro"
-            message above.
-          </p>
         </Container>
+        <SponsorBanner />
       </main>
     </ChakraProvider>
   )

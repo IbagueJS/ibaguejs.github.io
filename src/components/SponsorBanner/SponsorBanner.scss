@@ -1,0 +1,25 @@
+.sponsor-banner {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6cf002e;
+  width: 100%;
+  margin-bottom: 200px;
+  padding: 24px 20px;
+
+  &-title {
+    color: #403900;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-align: center;
+  }
+
+  &-description {
+    color: #807300;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
