@@ -8,10 +8,13 @@
   flex-direction: column;
   flex-wrap: nowrap;
   font-size: 13px;
+  height: 80px;
   justify-content: space-between;
   padding: 24px;
   position: fixed;
   -webkit-backdrop-filter: blur(10px);
+  transform: none;
+  transition: all 0.5s ease-out;
   width: 100%;
 
   &__icon {
@@ -24,7 +27,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 0;
+    height: 64px;
     transform: none;
     transition: all 0.5s ease-out;
     width: 100%;
@@ -64,7 +67,7 @@
   }
 
   &.is-open {
-    height: fit-content;
+    height: 340px;
 
     .navbar__right {
       height: fit-content;
