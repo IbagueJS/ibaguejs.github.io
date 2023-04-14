@@ -3,8 +3,11 @@ import { extendTheme, ChakraProvider, Container } from '@chakra-ui/react'
 import { Hero } from '../Hero/Hero'
 import { SponsorBanner } from '../SponsorBanner/SponsorBanner'
 import { Events } from '../Events/Events'
-import "@fontsource/roboto"
 import { SpeakerBanner } from '../SpeakerBanner/SpeakerBanner'
+import { Organizers } from '../Organizers/Organizers'
+import { Footer } from '../Footer/Footer'
+
+import "@fontsource/roboto"
 
 const colors = {
   yellow: {
@@ -33,7 +36,9 @@ export const Main = () => {
         <Container maxWidth="1352px" centerContent>
           <Events />
           <SpeakerBanner />
+          <Organizers />
         </Container>
+        <Footer />
       </main>
     </ChakraProvider>
   )
