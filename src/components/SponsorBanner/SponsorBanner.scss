@@ -1,17 +1,18 @@
 .sponsor-banner {
   display: flex;
-  flex-direction: column;
   background-color: #e6cf002e;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
   width: 100%;
-  margin-bottom: 200px;
   padding: 24px 20px;
 
   &-title {
     color: #403900;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.7px;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &-description {

@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   flex-direction: column-reverse;
+  font-family: "Roboto", sans-serif;
   margin: 80px 14px 0;
 
   &-text {
@@ -31,11 +32,13 @@
 
   @media (min-width: 640px) {
     flex-direction: row;
-    margin: 160px 160px 0;
+    margin: 160px 160px 64px;
     gap: 55px;
 
     &-text {
-      margin: 60px 0;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       width: 546px;
 
       &-title {
@@ -54,7 +57,7 @@
 
       img {
         width: 440px;
-        height: 525px;
+        height: 522px;
       }
     }
   }

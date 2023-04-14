@@ -3,10 +3,7 @@
 	background: linear-gradient(to right,  rgba(230, 207, 0, 0.3) 0%,rgba(255, 255, 255, 0.744) 100%);
 }
 
-$animationSpeed: 15s;
-
 $no-of-slides: 5;
-$slides-in-view: 3;
 $slide-width: 200px;
 $iteration-time: 10s;
 
@@ -25,9 +22,11 @@ $iteration-time: 10s;
 	height: 54px;
 	overflow:hidden;
 	position: relative;
+  margin: auto;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
-	width: 100%;
+	max-width: 1040px;
+  width: 100%;
 
 	.slide-track {
     animation: scroll $iteration-time linear infinite;
