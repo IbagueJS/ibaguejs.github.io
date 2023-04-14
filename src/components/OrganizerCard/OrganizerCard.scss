@@ -34,4 +34,19 @@
     color: #403900;
     font-size: 14px;
   }
+
+  &-social-media {
+    align-items: center;
+    color: #403900;
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    width: 100%;
+
+    &-icon {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+    }
+  }
 }

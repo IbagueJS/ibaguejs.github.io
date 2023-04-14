@@ -45,6 +45,7 @@ $iteration-time: 10s;
 		width: $slide-width;
 
     img{
+      cursor: pointer;
       pointer-events: none;
       user-select: none;
       display: block;

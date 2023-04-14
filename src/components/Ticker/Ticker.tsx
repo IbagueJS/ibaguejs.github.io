@@ -1,92 +1,46 @@
+import { useId } from 'react'
+import { sponsors } from '../../utils/constants'
 import './Ticker.scss'
 
 export const Ticker = () => {
   return (
     <div className="ticker">
-        <div className="slide-track">
-          <div className="slide">
-            <img
-              src="colombia-dev.svg"
-              height="32"
-              width="33"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="sociedad-ingenieros.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="ucc.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="unad.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="uni-ibague.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
+      <div className="slide-track">
+        {sponsors.map((sponsor) => {
+          const sponsorId = useId()
 
-          {/* repeat */}
-          <div className="slide">
-            <img
-              src="colombia-dev.svg"
-              height="32"
-              width="33"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="sociedad-ingenieros.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="ucc.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="unad.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <img
-              src="uni-ibague.png"
-              height="32"
-              width="250"
-              alt=""
-            />
-          </div>
-        </div>
+          return (
+            <div key={sponsorId} className="slide">
+              <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={sponsor.src}
+                  height={sponsor.height}
+                  width={sponsor.width}
+                  alt={sponsor.alt}
+                />
+              </a>
+            </div>
+          )
+        })}
+
+        {/* Repeat */}
+        {sponsors.map((sponsor) => {
+          const sponsorId = useId()
+
+          return (
+            <div key={sponsorId} className="slide">
+              <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={sponsor.src}
+                  height={sponsor.height}
+                  width={sponsor.width}
+                  alt={sponsor.alt}
+                />
+              </a>
+            </div>
+          )
+        })}
       </div>
+    </div>
   )
 }
