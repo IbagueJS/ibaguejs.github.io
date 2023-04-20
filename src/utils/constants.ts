@@ -1,3 +1,4 @@
+// If you add a spomsor you need to update the CSS in the Ticker
 export const sponsors = [
   {
     src:"colombia-dev.svg",

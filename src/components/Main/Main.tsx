@@ -28,12 +28,12 @@ export const Main = () => {
   return (
     <ChakraProvider theme={theme}>
       <main>
-        <Container maxWidth="1352px" centerContent>
+        <Container width="100vw" maxWidth="1352px" centerContent>
           <Navbar />
           <Hero />
         </Container>
         <SponsorBanner />
-        <Container maxWidth="1352px" centerContent>
+        <Container width="100vw" maxWidth="1352px" centerContent>
           <Events />
           <SpeakerBanner />
           <Organizers />
