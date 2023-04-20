@@ -3,7 +3,7 @@ import './Events.scss'
 
 export const Events = () => {
   return (
-    <div className='events'>
+    <div id="events" className='events'>
       <h2 className='events-title'>Eventos</h2>
       <div className="events-info">
         <div className="events-image">

@@ -2,7 +2,7 @@ import './Hero.scss'
 
 export const Hero = () => {
   return (
-    <section className="hero">
+    <section id="who-we-are" className="hero">
       <div className="hero-text">
         <h1 className="hero-text-title">
           IBAGUÉJS la comunidad de desarrolladores de JavaScript en Ibagué
