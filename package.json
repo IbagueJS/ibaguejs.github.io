@@ -29,6 +29,7 @@
     "react-markdown": "^8.0.7"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^1.2.0",
     "sass": "^1.58.0"
   }
 }
