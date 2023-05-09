@@ -36,3 +36,24 @@ export const sponsors = [
     url: "https://www.unibague.edu.co/"
   },
 ]
+
+export const socialMedia = {
+  github: 'github',
+  linkedin: 'linkedin',
+  twitter: 'twitter',
+}
+
+export const socialMediaLogo = {
+  [socialMedia.github]: {
+    alt: 'github logo',
+    src: 'github.svg',
+  },
+  [socialMedia.linkedin]: {
+    alt: 'linkedin logo',
+    src: 'linkedin.svg',
+  },
+  [socialMedia.twitter]: {
+    alt: 'twitter logo',
+    src: 'twitter.svg',
+  },
+}

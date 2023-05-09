@@ -1,3 +1,4 @@
+import { organizers } from '../../utils/organizers'
 import { OrganizerCard } from '../OrganizerCard/OrganizerCard'
 import './Organizers.scss'
 
@@ -9,17 +10,9 @@ export const Organizers = () => {
         Conoce a los organizadores detrás de esta comunidad
       </p>
       <div className="organizers-grid">
-        <OrganizerCard />
-        <OrganizerCard />
-        <OrganizerCard />
-
-        <OrganizerCard />
-        <OrganizerCard />
-        <OrganizerCard />
-
-        <OrganizerCard />
-        <OrganizerCard />
-        <OrganizerCard />
+        {organizers.map(organizer => (
+          <OrganizerCard organizer={organizer} />
+        ))}
       </div>
     </div>
   )
