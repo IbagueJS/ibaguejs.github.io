@@ -61,9 +61,7 @@ export const organizers = [
       src:"diego.jpeg",
     },
     name: 'Diego Avila',
-    description: `Software developer with +5 years in software construction, speaker and
-    active participant of the communities. Co-organizer @medellinjs -
-    @node_co`,
+    description: `Lifelong learning is my purpose. Sometimes I e̵a̵t̵ give pizza at @ibaguejs 🤭 and write code with JavaScript`,
     socialMedia: [
       {
         type: socialMedia.github,
@@ -109,7 +107,7 @@ export const organizers = [
       src:"andres-vasquez.jpeg",
     },
     name: 'Andrés Felipe (Elitee) Vasquez',
-    description: `soy Desarrollador de software " if it you think it you create`,
+    description: `Soy Desarrollador de software "if it you think it you create it"`,
     socialMedia: [
       {
         type: socialMedia.linkedin,
