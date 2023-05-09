@@ -6,6 +6,8 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://ibaguejs.com',
+  base: '/ibaguejs.github.io',
   integrations: [
     react(),
     partytown({
