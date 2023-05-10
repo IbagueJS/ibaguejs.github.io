@@ -5,7 +5,7 @@ export const Hero = () => {
     <section id="who-we-are" className="hero">
       <div className="hero-text">
         <h1 className="hero-text-title">
-          IBAGUÉJS la comunidad de desarrolladores de JavaScript en Ibagué
+          IBAGUÉJS: La comunidad de desarrolladores de JavaScript en Ibagué.
         </h1>
         <p className="hero-text-p">
           Únete a nosotros y aprende en comunidad. IbaguéJS es un espacio

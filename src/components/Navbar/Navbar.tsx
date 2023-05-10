@@ -28,6 +28,7 @@ export const Navbar = () => {
           className="sponsor-button"
           color="yellow.100"
           colorScheme="yellow"
+          onClick={() => window.open('https://forms.gle/fJRKkGKc4D4awkpA8', '_blank')}
         >
           ser colaborador
         </Button>

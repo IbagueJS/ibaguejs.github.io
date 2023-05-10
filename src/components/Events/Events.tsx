@@ -25,7 +25,7 @@ export const Events = () => {
             </div>
           </>
         ) : (
-          <p>Aún no tenemos información del evento de este mes, tan pronto la tengamos la compartiremos, revisa nuestras redes sociales! 😊 </p>
+          <p>Aún no tenemos información del evento de este mes, tan pronto la tengamos la compartiremos, ¡Revisa nuestras redes sociales! 😊 </p>
         )}
       </div>
     </div>

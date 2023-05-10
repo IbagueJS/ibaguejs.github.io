@@ -107,7 +107,7 @@ export const organizers = [
       src:"andres-vasquez.jpeg",
     },
     name: 'Andrés Felipe (Elitee) Vasquez',
-    description: `Soy Desarrollador de software "if it you think it you create it"`,
+    description: `Soy Desarrollador de software "if you think it, you can create it"`,
     socialMedia: [
       {
         type: socialMedia.linkedin,
