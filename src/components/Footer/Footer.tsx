@@ -41,7 +41,7 @@ export const Footer = () => {
         </a>
       </div>
       <p className="copy-right">© IbaguéJS 2022. All Rights Reserved.</p>
-      <p className="design-by">Designed with by: scaragrafo</p>
+      <p className="design-by">Designed by: scaragrafo</p>
     </div>
   )
 }
