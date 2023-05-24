@@ -20,7 +20,10 @@
   }
 
   &-image {
-    height: 222px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
   }
 
   &-description {
@@ -61,7 +64,6 @@
 
     &-image {
       max-width: 564px;
-      height: 384px;
     }
 
     &-description {

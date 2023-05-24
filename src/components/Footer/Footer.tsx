@@ -40,8 +40,8 @@ export const Footer = () => {
           <img className="social-media-icon" src="/github.svg" alt="" />
         </a>
       </div>
-      <p className="copy-right">© IbaguéJS 2022. All Rights Reserved.</p>
-      <p className="design-by">Designed by: scaragrafo</p>
+      <p className="copy-right">IbaguéJS © {new Date().getFullYear()}. Todos los derechos reservados.</p>
+      <p className="design-by">Diseñado por: @scaragrafo</p>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import { events } from '../../utils/events'
+import { Button } from '@chakra-ui/react'
 import './Events.scss'
 
 export const Events = () => {
@@ -18,6 +19,14 @@ export const Events = () => {
                 width={event.image.width}
                 height={event.image.height}
               />
+              <Button
+                className="events-link"
+                color="yellow.100"
+                colorScheme="yellow"
+                onClick={() => window.open(`${event.link}`, '_blank')}
+              >
+                Registrate aquí
+              </Button>
             </div>
             <div className="events-description">
               <h3 className="events-description-title">{event.title}</h3>
