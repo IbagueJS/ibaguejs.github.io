@@ -55,5 +55,34 @@ Quienes lleven equipos electrónicos personales deben prestar mucha atención al
 
 ANÍMATE TE ESPERAMOS!`
     },
+    5: {
+      image: {
+        alt: "banner meetup junio 2023",
+        height: "386",
+        src:"performance-frontend.jpeg",
+        width:"564",
+      },
+      link: 'https://ti.to/ibaguejs/performance-frontend',
+      title: "Meetup Junio",
+      description: `Potencia tu frontend: Únete a la tendencia del desarrollo web y acompáñanos este sábado 24 de Junio a hablar sobre el performance en el frontend:
+
+1️⃣ Performance en el Frontend - Julián David Yepes Rojas
+
+⏰ Información sobre la programación.
+
+[ 10:00-10:15 ] Llegada asistentes + Networking.
+
+[ 10:15-11:15 ] Charla + Preguntas.
+
+[ 11:15-12:00 ] Refrigerio + Networking.
+
+⚠️ Notas/Avisos:
+
+Cada charla es de 45 minutos con 15 minutos para preguntas.
+
+Quienes lleven equipos electrónicos personales deben prestar mucha atención al cuidado de sus pertenencias. Cada persona es responsable del cuidado y de mantener sus pertenencias seguras.
+
+ANÍMATE TE ESPERAMOS!!!`
+    },
   }
 }
