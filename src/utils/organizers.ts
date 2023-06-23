@@ -3,6 +3,24 @@ import { socialMedia } from "./constants";
 export const organizers = [
   {
     image: {
+      alt: "Giovanny Gongora picture",
+      src:"giovanny.jpeg",
+    },
+    name: 'Giovanny Gongora',
+    description: `Senior Software Engineer - JavaScript/Node.js and C/C++ - Memory and Performance enthusiast - Operating System Developer as a hobby.`,
+    socialMedia: [
+      {
+        type: socialMedia.github,
+        url: 'https://github.com/gioyik'
+      },
+      {
+        type: socialMedia.linkedin,
+        url: 'https://www.linkedin.com/in/gioyik/'
+      },
+    ]
+  },
+  {
+    image: {
       alt: "Andres Santos picture",
       src:"andres.jpeg",
     },
