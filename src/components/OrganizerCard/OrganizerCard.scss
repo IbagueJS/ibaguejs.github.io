@@ -1,0 +1,57 @@
+.organizer-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px #0000001f;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "Roboto", sans-serif;
+  gap: 16px;
+  height: 416px;
+  justify-content: flex-start;
+  min-width: 300px;
+  padding: 16px;
+  width: 330px;
+  text-align: start;
+  // Tempora!! margin
+  margin-bottom: 24px;
+
+  &-image {
+    border-radius: 2px;
+    display: flex;
+    height: 185px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 16px;
+
+    img {
+      max-height: 185px;
+    }
+  }
+
+  &-title {
+    color: #403900;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &-description {
+    color: #403900;
+    font-size: 14px;
+  }
+
+  &-social-media {
+    align-items: center;
+    color: #403900;
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    width: 100%;
+
+    &-icon {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

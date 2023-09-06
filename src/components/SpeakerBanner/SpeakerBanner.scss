@@ -1,0 +1,23 @@
+.speaker-banner {
+  background-color: #FFE400;
+  border-radius: 8px;
+  color: #403900;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+  margin: 24px;
+  max-width: 1040px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  &-anchor {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 640px) {
+    margin: 32px 0;
+  }
+}

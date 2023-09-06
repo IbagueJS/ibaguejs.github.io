@@ -1,0 +1,119 @@
+.navbar {
+  align-items: start;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  height: 80px;
+  justify-content: space-between;
+  padding: 24px;
+  position: fixed;
+  -webkit-backdrop-filter: blur(10px);
+  transform: none;
+  transition: all 0.5s ease-out;
+  width: inherit;
+  z-index: 1;
+
+  &__icon {
+    width: 118px;
+  }
+
+
+
+  &__right {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 64px;
+    transform: none;
+    transition: all 0.5s ease-out;
+    width: 100%;
+
+    .section-links {
+      align-items: center;
+      display: none;
+      flex-direction: column;
+      height: fit-content;
+      margin: 0;
+      list-style: none;
+      padding: 0 16px;
+      text-transform: uppercase;
+
+      li {
+        padding: 12px 0;
+
+        a {
+          color: #403900;
+          font-weight: 500;
+          text-decoration: none;
+
+          &.active,
+          &:hover {
+            color: #807300;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .sponsor-button {
+      display: none;
+      text-transform: uppercase;
+      margin: 12px 0 24px;
+    }
+  }
+
+  &.is-open {
+    height: 340px;
+
+    .navbar__right {
+      height: fit-content;
+    }
+
+    .section-links {
+      display: flex;
+    }
+
+    .sponsor-button {
+      display: block;
+    }
+  }
+
+  @media (min-width: 886px) {
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    padding: 24px 80px;
+
+    &__right {
+      align-items: center;
+      flex-direction: row;
+      height: 64px;
+      width: fit-content;
+    }
+
+    .section-links {
+      display: flex;
+      flex-direction: row;
+      height: 64px;
+
+      li {
+        padding: 8px;
+      }
+    }
+
+    .sponsor-button {
+      display: block;
+      margin: 0;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+}
