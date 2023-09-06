@@ -1,13 +1,6 @@
 // If you add a spomsor you need to update the CSS in the Ticker
 export const sponsors = [
   {
-    src:"colombia-dev.svg",
-    height: "32",
-    width:"33",
-    alt: "colombia dev logo",
-    url: "https://colombia-dev.org/"
-  },
-  {
     src:"sociedad-ingenieros.png",
     height: "32",
     width:"250",
