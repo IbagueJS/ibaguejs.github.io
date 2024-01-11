@@ -4,7 +4,7 @@ export const events = {
       image: {
         alt: "colombia dev logo",
         height: "386",
-        src:"queues-nodejs.jpeg",
+        src:"/ibaguejs.github.io/queues-nodejs.jpeg",
         width:"564",
       },
       link: '',
@@ -31,7 +31,7 @@ export const events = {
       image: {
         alt: "banner meetup mayo 2023",
         height: "386",
-        src:"rxjs.jpeg",
+        src:"/ibaguejs.github.io/rxjs.jpeg",
         width:"564",
       },
       link: 'https://ti.to/ibaguejs/rxjs',
@@ -59,7 +59,7 @@ ANÍMATE TE ESPERAMOS!`
       image: {
         alt: "banner meetup junio 2023",
         height: "386",
-        src:"performance-frontend.jpeg",
+        src:"/ibaguejs.github.io/performance-frontend.jpeg",
         width:"564",
       },
       link: 'https://ti.to/ibaguejs/performance-frontend',

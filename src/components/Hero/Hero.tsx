@@ -23,7 +23,7 @@ export const Hero = () => {
         </p>
       </div>
       <div className="hero-image">
-        <img src="ibaguejs-hero.webp" alt="" width={352} height={417} />
+        <img src="/ibaguejs.github.io/ibaguejs-hero.webp" alt="" width={352} height={417} />
       </div>
     </section>
   )

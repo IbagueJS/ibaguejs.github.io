@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav className={classNames('navbar', { 'is-open': isOpen })}>
-      <img className="navbar__icon" src="ibaguejs_black_and_white.png" alt="" />
+      <img className="navbar__icon" src="/ibaguejs.github.io/ibaguejs_black_and_white.png" alt="" />
       <div className="navbar__right">
         <ul className="section-links">
           <li>
