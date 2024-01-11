@@ -4,7 +4,7 @@ export const organizers = [
   {
     image: {
       alt: "Giovanny Gongora picture",
-      src:"giovanny.jpeg",
+      src:"/ibaguejs.github.io/giovanny.jpeg",
     },
     name: 'Giovanny Gongora',
     description: `Senior Software Engineer - JavaScript/Node.js and C/C++ - Memory and Performance enthusiast - Operating System Developer as a hobby.`,
@@ -22,7 +22,7 @@ export const organizers = [
   {
     image: {
       alt: "Andres Santos picture",
-      src:"andres.jpeg",
+      src:"/ibaguejs.github.io/andres.jpeg",
     },
     name: 'Andrés Santos',
     description: `Senior Software Engineer | JavaScript | Node.js | NestJS | Serverless | Microservices | AWS | CDK`,
@@ -40,7 +40,7 @@ export const organizers = [
   {
     image: {
       alt: "Jose Manuel picture",
-      src:"jose.jpeg",
+      src:"/ibaguejs.github.io/jose.jpeg",
     },
     name: 'Jose Manuel Zamora Ortiz',
     description: `Líder técnico desarrollador de software - IBACREA SAS, ENLACE SOSTENIBLE, DEVSHOUSE`,
@@ -58,7 +58,7 @@ export const organizers = [
   {
     image: {
       alt: "Yesion Tapia picture ",
-      src:"yeison.jpeg",
+      src:"/ibaguejs.github.io/yeison.jpeg",
     },
     name: 'Yesion Fabian Tapia Lozano',
     description: `Software Engineer en EPAM`,
@@ -76,7 +76,7 @@ export const organizers = [
   {
     image: {
       alt: "Diego Avila picture",
-      src:"diego.jpeg",
+      src:"/ibaguejs.github.io/diego.jpeg",
     },
     name: 'Diego Avila',
     description: `Lifelong learning is my purpose. Sometimes I e̵a̵t̵ give pizza at @ibaguejs 🤭 and write code with JavaScript`,
@@ -94,7 +94,7 @@ export const organizers = [
   {
     image: {
       alt: "Diana Cabrejo picture ",
-      src:"diana.jpeg",
+      src:"/ibaguejs.github.io/diana.jpeg",
     },
     name: 'Diana Cabrejo',
     description: `Scrum Master | Ssr Business Analyst at Globant | Founder of IbagirlsDev Community`,
@@ -108,7 +108,7 @@ export const organizers = [
   {
     image: {
       alt: "Juan Jose picture ",
-      src:"juan-jose.jpeg",
+      src:"/ibaguejs.github.io/juan-jose.jpeg",
     },
     name: 'Juan Jose Suarez',
     description: `Full-Stack Developer, one commit at a time`,
@@ -122,7 +122,7 @@ export const organizers = [
   {
     image: {
       alt: "Andres Vasquez picture ",
-      src:"andres-vasquez.jpeg",
+      src:"/ibaguejs.github.io/andres-vasquez.jpeg",
     },
     name: 'Andrés Felipe (Elitee) Vasquez',
     description: `Soy Desarrollador de software "if you think it, you can create it"`,
